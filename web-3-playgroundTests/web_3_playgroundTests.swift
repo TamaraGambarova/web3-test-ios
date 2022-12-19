@@ -6,6 +6,8 @@
 //
 
 import XCTest
+import web3
+
 @testable import web_3_playground
 
 class web_3_playgroundTests: XCTestCase {
@@ -19,8 +21,28 @@ class web_3_playgroundTests: XCTestCase {
     }
 
     func testExample() throws {
+        if #available(iOS 15, *) {
+            guard let clientUrl = URL(string: "https://an-infura-or-similar-url.com/123") else {
+                return
+            }
+            let client = EthereumWebSocketClient(url: clientUrl)
+
+            client.eth_gasPrice { (currentPrice) in
+                print("The current gas price is \(currentPrice)")
+            }
+        } else {
+            guard let clientUrl = URL(string: "https://an-infura-or-similar-url.com/123") else {
+                return
+            }
+            let client = EthereumWebSocketClient(url: clientUrl)
+
+            client.eth_gasPrice { (currentPrice) in
+                print("The current gas price is \(currentPrice)")
+            }
+        }
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
+        
     }
 
     func testPerformanceExample() throws {

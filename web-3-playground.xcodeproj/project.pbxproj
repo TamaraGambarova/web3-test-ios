@@ -7,10 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E251BF41294B4DED0031E1E9 /* TxSenderCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = E251BF40294B4DED0031E1E9 /* TxSenderCheck.swift */; };
 		E284A80C294873AC002B8D63 /* web_3_playground.docc in Sources */ = {isa = PBXBuildFile; fileRef = E284A80B294873AC002B8D63 /* web_3_playground.docc */; };
 		E284A812294873AC002B8D63 /* web_3_playground.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E284A807294873AC002B8D63 /* web_3_playground.framework */; };
 		E284A817294873AC002B8D63 /* web_3_playgroundTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E284A816294873AC002B8D63 /* web_3_playgroundTests.swift */; };
 		E284A818294873AC002B8D63 /* web_3_playground.h in Headers */ = {isa = PBXBuildFile; fileRef = E284A80A294873AC002B8D63 /* web_3_playground.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E284A8232948748C002B8D63 /* web3.swift in Frameworks */ = {isa = PBXBuildFile; productRef = E284A8222948748C002B8D63 /* web3.swift */; };
+		E284A825294874A2002B8D63 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = E284A824294874A2002B8D63 /* Test.swift */; };
+		E284A85D294879FC002B8D63 /* SmartContracts.swift in Sources */ = {isa = PBXBuildFile; fileRef = E284A85C294879FC002B8D63 /* SmartContracts.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,11 +28,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E251BF40294B4DED0031E1E9 /* TxSenderCheck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TxSenderCheck.swift; sourceTree = "<group>"; };
 		E284A807294873AC002B8D63 /* web_3_playground.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = web_3_playground.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E284A80A294873AC002B8D63 /* web_3_playground.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = web_3_playground.h; sourceTree = "<group>"; };
 		E284A80B294873AC002B8D63 /* web_3_playground.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = web_3_playground.docc; sourceTree = "<group>"; };
 		E284A811294873AC002B8D63 /* web-3-playgroundTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "web-3-playgroundTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E284A816294873AC002B8D63 /* web_3_playgroundTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = web_3_playgroundTests.swift; sourceTree = "<group>"; };
+		E284A824294874A2002B8D63 /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
+		E284A85C294879FC002B8D63 /* SmartContracts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartContracts.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E284A8232948748C002B8D63 /* web3.swift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,6 +81,9 @@
 			children = (
 				E284A80A294873AC002B8D63 /* web_3_playground.h */,
 				E284A80B294873AC002B8D63 /* web_3_playground.docc */,
+				E284A824294874A2002B8D63 /* Test.swift */,
+				E284A85C294879FC002B8D63 /* SmartContracts.swift */,
+				E251BF40294B4DED0031E1E9 /* TxSenderCheck.swift */,
 			);
 			path = "web-3-playground";
 			sourceTree = "<group>";
@@ -113,6 +124,9 @@
 			dependencies = (
 			);
 			name = "web-3-playground";
+			packageProductDependencies = (
+				E284A8222948748C002B8D63 /* web3.swift */,
+			);
 			productName = "web-3-playground";
 			productReference = E284A807294873AC002B8D63 /* web_3_playground.framework */;
 			productType = "com.apple.product-type.framework";
@@ -162,6 +176,9 @@
 				Base,
 			);
 			mainGroup = E284A7FD294873AB002B8D63;
+			packageReferences = (
+				E284A8212948748C002B8D63 /* XCRemoteSwiftPackageReference "web3" */,
+			);
 			productRefGroup = E284A808294873AC002B8D63 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -195,6 +212,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				E284A80C294873AC002B8D63 /* web_3_playground.docc in Sources */,
+				E251BF41294B4DED0031E1E9 /* TxSenderCheck.swift in Sources */,
+				E284A825294874A2002B8D63 /* Test.swift in Sources */,
+				E284A85D294879FC002B8D63 /* SmartContracts.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -396,6 +416,7 @@
 		E284A81F294873AC002B8D63 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -416,6 +437,7 @@
 		E284A820294873AC002B8D63 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -464,6 +486,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E284A8212948748C002B8D63 /* XCRemoteSwiftPackageReference "web3" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/argentlabs/web3.swift";
+			requirement = {
+				branch = develop;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E284A8222948748C002B8D63 /* web3.swift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E284A8212948748C002B8D63 /* XCRemoteSwiftPackageReference "web3" */;
+			productName = web3.swift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E284A7FE294873AB002B8D63 /* Project object */;
 }
